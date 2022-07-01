@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+}
+
+.human {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/images/human.png');
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: center;
+    z-index: 10;
+    position: absolute;
+}
+
+.landscape {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/images/landscape.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+    position: absolute;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: -25px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
